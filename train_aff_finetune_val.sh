@@ -1,0 +1,17 @@
+# deepspeed --master_port=24999 --include localhost:0 train_aff_revise.py 
+# --image_aspect_ratio="pad" \
+deepspeed --master_port=24977 --include localhost:1 train_aff_finetune_val.py  \
+    --stage="finetune" \
+    --dataset_time="train" \
+    --data_path="ex) /home/ubuntu/AGD20K/data_train_revise_path.json" \
+    --data_path_valid="ex) /home/ubuntu/AGD20K/data_valid_revise_path.json" \
+    --image_folder="ex) /home/ubuntu/AGD20K" \
+    --conv_version="v1" \
+    --image_aspect_ratio="pad" \
+    --batch_size=4 \
+    --epochs=10 \
+    --lr=2e-5 \
+    --exp_name="aff_try_1" \
+    --transconv_h=256 \
+    --load_mm_projector_file_path="mm_projector.bin" \
+    --load_mm_projector=True 2>&1 | tee -a train_print.txt
