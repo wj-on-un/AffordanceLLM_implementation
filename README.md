@@ -15,7 +15,7 @@ conda create -n [env] python=3.10
 conda activate [env]
 git clone https://github.com/haotian-liu/LLaVA
 cd LLaVA
-pip install -e ".[train]
+pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
 
