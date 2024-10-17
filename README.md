@@ -1,4 +1,4 @@
-# imp_affordancellm
+# AffordanceLLM_implementation
 This is an implementation of an arbitrary affordancellm. 
 
 It is not perfect(Incomplete version).
