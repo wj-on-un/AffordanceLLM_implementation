@@ -41,4 +41,6 @@ bash train_aff_finetune_val.sh
 
 ※ Overall Feature dimension
 
+※ Focal Loss
+
 ※ Output_upscaling part of mask_decoder
